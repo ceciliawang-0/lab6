@@ -9,6 +9,132 @@
     <script type="module" src="js/bootstrap.bundle.min.js"></script>    
 </head>
 <body>
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ocean Wonders</a>
+
+            <button class="btn-icon navbar-toggler"
+                    type="button"
+                    data-bs-toggle="drawer"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+            <dialog class="drawer drawer-end"
+                    tabindex="-1"
+                    id="navbarNav"
+                    aria-labelledby="navbarNavLabel">
+                <div class="drawer-header">
+                    <span class="drawer-title" id="navbarNavLabel">Menu</span>
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="drawer"
+                            aria-label="Close">
+                    </button>
+                </div>
+                <div class="drawer-body">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About the Ocean</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+
+        <h1 class="mb-3">Get in Touch</h1>
+
+        <p class="mb-4">
+            Have a question about marine life?
+            Send us a message!
+        </p>
+
+        <form>
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6">
+                    <div class="mb-3 form-field">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control"
+                            id="firstName" name="firstName" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="mb-3 form-field">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control"
+                            id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="mb-3 form-field">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control"
+                            id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="col-12 md:col-6">
+                    <div class="mb-3 form-field">
+                        <label for="topic" class="form-label">What interests you?</label>
+                        <select class="form-control" id="topic" name="topic" required>
+                            <option value="">Choose a topic</option>
+                            <option value="marine-life">Marine Life</option>
+                            <option value="coral-reefs">Coral Reefs</option>
+                            <option value="conservation">Ocean Conservation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="mb-3 form-field">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message"
+                                name="message" rows="5" required></textarea>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="mb-3 form-field">
+                        <input type="checkbox" class="check"
+                            id="consent" name="consent" required>
+                        <label for="consent">I agree to be contacted.</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-solid theme-primary">
+                Submit
+            </button>
+
+        </form>
+
+    </main>
+    <footer class="container-fluid mt-5">
+        <p class="p-3 bg-1 border d-flex justify-content-center">
+            © 2026 Ocean Wonders
+        </p>
+    </footer>
+
     
 </body>
 </html>
