@@ -1,0 +1,15 @@
+:root {
+    --bs-primary-base: #006B7C;
+    --bs-primary-bg: #006B7C;
+    --bs-primary-contrast: #FFFFFF;
+}
+
+.btn-solid.theme-primary {
+    --bs-theme-bg: var(--bs-primary-bg);
+    --bs-theme-contrast: var(--bs-primary-contrast);
+}
+
+.ocean-footer {
+    background-color: #006B7C;
+    color: #FFFFFF;
+}
